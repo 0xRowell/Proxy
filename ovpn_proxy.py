@@ -13,8 +13,8 @@ except:
 PASS = ''
 BUFLEN = 4096 * 4
 TIMEOUT = 60
-MSG = 'KobZ'
-DEFAULT_HOST = '0.0.0.0:1194'
+MSG = 'Wootz'
+DEFAULT_HOST = '0.0.0.0:110'
 RESPONSE = "HTTP/1.1 200 " + str(MSG) + "\r\n\r\n"
  
 class Server(threading.Thread):
@@ -170,7 +170,7 @@ class ConnectionHandler(threading.Thread):
             host = host[:i]
         else:
             if self.method=='CONNECT':
-                port = 1194
+                port = 110
             else:
                 port = 22
 
